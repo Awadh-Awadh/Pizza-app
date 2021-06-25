@@ -25,31 +25,162 @@
   <!-- css -->
   <link rel="stylesheet" href="static/css/style.css">
   <title>Pizzeria</title>
-
+</head>
+<body>
+  
   <section id="header">
     <!-- navbar -->
 
+<div class="container-fluid">
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="#"><img class = "logo" src="./static/images/logo.png" alt=""></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <form class="my-2 my-lg-0 ml-auto">
+        <button class="btn btn-outline-warning my-2 my-sm-0" type="submit">Order Now ! !</button>
+      </form>
+    </div>
+  </nav>
+  <div class="main-cont">
+    <div class="content">
+      <h1>Welcome to <span>Pizzeria</span></h1>
+      <h3>Customize your Pizza and order it anytime</h3>
+    </div>
+    <div class="hero-img">
+      <img class = "hero"src="./static/images/hero.jpg" alt="Hero image">
+    </div>
+  </div>
+  <div class="button-app">
+    <button type="button" class="btn btn-dark btn-lg download-button"> Download</button>
+    <button type="button" class="btn btn-outline-light btn-lg download-button"> Download</button>
+  </div>
+</div>
+   
 
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <a class="navbar-brand" href="#"><img class = "logo" src="./static/images/logo.png" alt=""></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <form class="my-2 my-lg-0 ml-auto">
-          <button class="btn btn-outline-warning my-2 my-sm-0" type="submit">Order Now ! !</button>
-        </form>
+</section>
+
+
+<!-- Sizes Carousel -->
+
+
+<section id="carusel">
+  <div class="carousel-card">
+    <div class="card-header">
+      <h3>Small</h3>
+    </div>
+    <div class="card-body">
+      <img src="./static/images/hero.jpg" alt="Small">
+    </div>
+    <div class="card-footer">
+      <h4>Price : <span>ksh. 500</span></h4>
+    </div>
+  </div>
+  <!-- <div class="carousel-card">
+    <div class="card-header">
+      <h3>Medium</h3>
+    </div>
+    <div class="card-body">
+      <img src="./static/images/crispy.jpg" alt="Medium">
+    </div>
+    <div class="card-footer">
+      <h4>Price : <span>ksh. 800</span></h4>
+    </div>
+
+  </div> -->
+  <!-- <div class="carousel-card">
+    <div class="card-header">
+      <h3>Large</h3>
+    </div>
+    <div class="card-body">
+      <img src="./static/images/glutten.jpg" alt="Small">
+    </div>
+    <div class="card-footer">
+      <h4>Price : <span>ksh. 1200</span></h4>
+    </div>
+
+  </div> -->
+
+  <div class="border">
+
+  </div>
+</section>
+
+<!-- Customize and Order -->
+
+<section id="order">
+<div class="oder-head">
+  <h2>Customize Your Pizza</h2>
+</div>
+<div class="crust-head">
+  <h5>Choose your crust</h5>
+</div>
+<div class="row ">
+  <div class="col-lg-4">
+    <div class="crispy">
+  <input type="radio" id="crispy" >
+  <label for="crispy">Crispy</label>
+<div class="crispy-image">
+  <img class = "cris" src="./static/images/crispy.jpg" alt="">
+</div>
+  </div>
+  </div>
+  <div class="col-lg-4">
+    <div class="stuffed">
+  <input type="radio" id="stuff" >
+  <label for="stuff">Stuffed</label>
+<div class="stuffed-image">
+  <img class = "stuff" src="./static/images/stuffed.jpg" alt="stuffed">
+</div>
+  </div>
+  </div>
+  <div class="col-lg-4">
+    <div class="gluten-free">
+  <input type="radio" id="crispy" >
+  <label for="glutten">Gluten-free</label>
+<div class="glutten-image">
+  <img class = "glut" src="./static/images/glutten.jpg" alt="">
+</div>
+  </div>
+  </div>
+</div>
+<div class="topping-head">
+  <h5>Choose Your Preffered Toppings</h5>
+</div>
+<div class="row">
+  <div class="col-lg-4">
+  <div class="Mayonaise">
+  <input type="radio" id="mayo" checked>
+  <label for="mayo">Mayonaise</label>
+  <div class="mayo">
+  <img class = "mayo-image" src="./static/images/cheese.jpg" alt="">
+</div>
+  </div>
+  </div>
+  <div class="col-lg-4">
+    <div class="veg">
+    <input type="radio" id="vegetable" checked>
+    <label for="vegetable">Vegan</label>
+    <div class="vegan">
+    <img class = "vegan-image" src="./static/images/cheese.jpg" alt="">
+  </div>
+    </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="Beef">
+      <input type="radio" id="beef" checked>
+      <label for="beef">Cheese & Beef</label>
+      <div class="beef-may">
+      <img class = "cheese-image" src="./static/images/cheese.jpg" alt="">
+    </div>
       </div>
-    </nav>
+      </div>
 
+</div>
 
-
-  </section>
-</head>
-
-<body>
-
+</section>
 </body>
 
 </html>
