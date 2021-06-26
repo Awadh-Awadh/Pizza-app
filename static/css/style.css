@@ -95,9 +95,38 @@ padding: 3rem 0;
 .crust,.tops{
   padding-bottom: 6rem;
 }
-.quantity{
-  padding: 2rem 0;
-}
 .fm-content{
 font-size: 2rem;
+}
+.fm-quantity,.fm-size,.fm-delivery{
+  width: 50%;
+  padding: 1rem 0;
+  border-radius: 10px;
+  outline: none;
+  background-color:#cef0f3;
+  border: none;
+}
+.fm-size{
+margin-left: 9.5rem;
+}
+.fm-quantity{
+  margin-left: 6rem;
+  }
+  .fm-delivery{
+    margin-left: 6rem;
+  }
+.fm-quantity:focus{
+  background-color: #FA7D1E;
+  opacity: 1;
+  border: 2px solid white;
+}
+.fm-quantity:hover{
+  border: 2px solid #FA7D1E;
+}
+.size-select{
+  padding: 5rem 0;
+}
+.custom{
+  background-color: #FA7D1E !important;
+  margin-left: 2rem;
 }
