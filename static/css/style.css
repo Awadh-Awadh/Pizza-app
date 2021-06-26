@@ -61,3 +61,8 @@ padding: 3rem 0;
   height: 300px;
   border-radius: 100%;
 }
+.border-bm{
+  width: 20%;
+  margin: 0 auto;
+  border-bottom: 25px dotted #FA7D1E !important;
+}
