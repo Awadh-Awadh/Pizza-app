@@ -113,7 +113,7 @@ margin-left: 9.5rem;
   margin-left: 6rem;
   }
   .fm-delivery{
-    margin-left: 6rem;
+    margin-left: 7rem;
   }
 .fm-quantity:focus{
   background-color: #FA7D1E;
@@ -129,4 +129,21 @@ margin-left: 9.5rem;
 .custom{
   background-color: #FA7D1E !important;
   margin-left: 2rem;
+}
+.checkout{
+  margin: 5rem auto;
+  text-align: center;
+  transition: all 1s ease;
+}
+.check{
+  width: 80% !important;
+  background-color: #FA7D1E !important;
+  transition: all 1s ease;
+  
+}
+.check:hover,
+.custom:hover{
+  box-shadow: 4px 4px 4px#241912;
+  background-color: #FDFEFF !important;
+  border: 2px solid #FA7D1E !important; 
 }
