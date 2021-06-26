@@ -76,46 +76,163 @@
     <section id="carusel">
       <div class="row">
         <div class="col-lg-12 text-center d-flex justify-content-center">
-      <div class="carousel-card">
-        <div class="card-head">
-          <h3 class="carosel-head">Small</h3>
-        </div>
-        <div class="card-body">
-          <img class = "card-img"src="./static/images/hero.jpg" alt="Small">
-        </div>
-        <div class="card-foot">
-          <h4>Price : <span class= "price">ksh. 500</span></h4>
-        </div>
-      </div>
+
+          <div id="carouselIndicator" class="carousel slide" data-ride= "carousel" data-interval="3000">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="carousel-card">
+                  <div class="card-head">
+                    <h3 class="carosel-head">Small</h3>
+                  </div>
+                  <div class="card-body">
+                    <img class = "card-img"src="./static/images/hero.jpg" alt="Small">
+                  </div>
+                  <div class="card-footer">
+                    <h4>Price : <span class= "price">ksh. 500</span></h4>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="carousel-card">
+                  <div class="card-head">
+                    <h3 class="carosel-head">Medium</h3>
+                  </div>
+                  <div class="card-body">
+                    <img class = "card-img" src="./static/images/crispy.jpg" alt="Medium">
+                  </div>
+                  <div class="card-footer">
+                    <h4>Price : <span class= "price">ksh. 800</span></h4>
+                  </div>
+              
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="carousel-card">
+                  <div class="card-head">
+                    <h3 class="carosel-head">Large</h3>
+                  </div>
+                  <div class="card-body">
+                    <img class = "card-img" src="./static/images/glutten.jpg" alt="Small">
+                  </div>
+                  <div class="card-footer">
+                    <h4>Price : <span class= "price">ksh. 1200</span></h4>
+                  </div>
+              
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselIndicator" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next pad-right" href="#carouselIndicator" role="button" data-slide="next">
+              <span class="carousel-control-next-icon " aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
   </div>
   
 </div>
 </section>
   
-    <!-- <div class="carousel-card">
-    <div class="card-header">
-      <h3>Medium</h3>
-    </div>
-    <div class="card-body">
-      <img src="./static/images/crispy.jpg" alt="Medium">
-    </div>
-    <div class="card-footer">
-      <h4>Price : <span>ksh. 800</span></h4>
-    </div>
-
-  </div> -->
-    <!-- <div class="carousel-card">
-    <div class="card-header">
-      <h3>Large</h3>
-    </div>
-    <div class="card-body">
-      <img src="./static/images/glutten.jpg" alt="Small">
-    </div>
-    <div class="card-footer">
-      <h4>Price : <span>ksh. 1200</span></h4>
-    </div>
-
-  </div> -->
+   
+    
 
     <div class="border-bm">
 
@@ -134,7 +251,7 @@
     <div class="row text-center crust">
       <div class="col-lg-4">
         <div class="crispy">
-          <input type="radio" id="crispy">
+          <input type="radio" id="crispy" name = "crust">
             <label class = "" for="crispy">Crispy</label>
           <div class="crispy-image">
             <img class="cris" src="./static/images/crispy.jpg" alt="">
@@ -143,7 +260,7 @@
       </div>
       <div class="col-lg-4">
         <div class="stuffed">
-          <input type="radio" id="stuff">
+          <input type="radio" id="stuff" name = "crust">
             <label for="stuff">Stuffed</label>
           <div class="stuffed-image">
             <img class="stuff" src="./static/images/stuffed.jpg" alt="stuffed">
@@ -152,7 +269,7 @@
       </div>
       <div class="col-lg-4">
         <div class="gluten-free">
-          <input type="radio" id="crispy">
+          <input type="radio" id="glutten" name = "crust">
             <label for="glutten">Gluten-free</label>
           <div class="glutten-image">
             <img class="glut" src="./static/images/glutten.jpg" alt="">
@@ -166,7 +283,7 @@
     <div class="row text-center tops">
       <div class="col-lg-4">
         <div class="Mayonaise">
-          <input type="radio" id="mayo" checked>
+          <input type="radio" id="mayo" name ="tops" checked>
             <label for="mayo">Mayonaise</label>
           <div class="mayo">
             <img class="mayo-image" src="./static/images/cheese.jpg" alt="">
@@ -175,7 +292,7 @@
       </div>
       <div class="col-lg-4">
         <div class="veg">
-          <input type="radio" id="vegetable">
+          <input type="radio" id="vegetable" name ="tops">
             <label for="vegetable">Vegan</label>
           <div class="vegan">
             <img class="vegan-image" src="./static/images/vegan.jpg" alt="">
@@ -184,7 +301,7 @@
       </div>
       <div class="col-lg-4">
         <div class="Beef">
-          <input type="radio" id="beef">
+          <input type="radio" id="biff" name ="tops">
             <label for="beef">Cheese & Beef</label>
           <div class="beef-may">
             <img class="cheese-image" src="./static/images/Beef mayo.jpg" alt="">
@@ -241,7 +358,7 @@
 
   </section>
 
- 
+ <script src="./static/js/main.js"></script>
 </body>
 
 </html>
