@@ -82,7 +82,8 @@ padding: 3rem 0;
   letter-spacing: .4rem;
 }
 .crust-head h5,
-.topping-head h5
+.topping-head h5,
+.card-head h5
 {
   padding: 2rem 0;
   font-size: 2rem;
@@ -146,4 +147,26 @@ margin-left: 9.5rem;
   box-shadow: 4px 4px 4px#241912;
   background-color: #FDFEFF !important;
   border: 2px solid #FA7D1E !important; 
+}
+#pricing{
+text-align: center;
+display: flex;
+justify-content: center;
+}
+.results{
+  width: 400px;
+  height: 400px;
+  background-color: #FDFEFF;
+  border-radius: 20px;
+  display: flex;
+  color: #000;
+  justify-content: space-around;
+  align-content: center;
+}
+.tick{
+ margin: auto 0;
+}
+
+.result-price{
+  padding-top: 15rem;
 }
