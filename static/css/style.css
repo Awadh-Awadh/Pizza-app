@@ -5,11 +5,21 @@
   height: 80px;
 }
 #header{
+  padding: 2rem 10rem;
+}
+#header,#order{
   background-color: #000;
   color: #FDFEFF;
   background-image: linear-gradient( rgb(3, 1, 1), rgb(7, 5, 5));
-  padding: 2rem 10rem;
 }
+#carusel{
+  text-align: center;
+  padding: 4rem 0;
+}
+#order{
+  padding: 2rem 4rem;
+}
+
 .hero{
   height: 400px;
   width: 400px;
@@ -22,10 +32,12 @@ h1{
 
 }
 h3{
-  font-family: 'DM Sans', sans-serif;
   padding-top: 2rem;
   font-size: 2rem;
   letter-spacing: .3rem;
+}
+h2,h3,h4,h5,h6,label{
+  font-family: 'DM Sans', sans-serif;
 }
 .carosel-head{
 font-weight: 700;
@@ -52,10 +64,6 @@ padding: 3rem 0;
 .ios{
   margin-left: 5rem;
 }
-#carusel{
-  text-align: center;
-  padding: 4rem 0;
-}
 .card-img{
   width: 300px;
   height: 300px;
@@ -63,6 +71,33 @@ padding: 3rem 0;
 }
 .border-bm{
   width: 20%;
-  margin: 0 auto;
+  margin: 2rem auto;
   border-bottom: 25px dotted #FA7D1E !important;
+}
+.oder-head h2{
+  text-align: center;
+  padding: 5rem 0;
+  font-weight: 700;
+  font-size: 3rem;
+  letter-spacing: .4rem;
+}
+.crust-head h5,
+.topping-head h5
+{
+  padding: 2rem 0;
+  font-size: 2rem;
+}
+.cris,.stuff,.glut,.mayo-image,.vegan-image,.cheese-image{
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;
+}
+.crust,.tops{
+  padding-bottom: 6rem;
+}
+.quantity{
+  padding: 2rem 0;
+}
+.fm-content{
+font-size: 2rem;
 }
