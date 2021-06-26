@@ -33,7 +33,7 @@
     <!-- navbar -->
 
     <div class="container-fluid">
-      <nav class="navbar navbar-expand-lg navbar-light">
+      <nav class="navbar navbar-expand-lg navbar-dark bar">
         <a class="navbar-brand" href="#"><img class="logo" src="./static/images/logo.png" alt=""></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -46,18 +46,23 @@
           </form>
         </div>
       </nav>
-      <div class="main-cont">
-        <div class="content">
-          <h1>Welcome to <span>Pizzeria</span></h1>
-          <h3>Customize your Pizza and order it anytime</h3>
+
+      <!-- Content header -->
+
+
+
+      <div class="row content-main">
+        <div class="col-lg-6">
+          <h1>Welcome to <span class = "pizzeria">Pizzeria</span></h1>
+          <h3>Customize your Pizza and order it anytime.</h3>
         </div>
-        <div class="hero-img">
+        <div class="col-lg-6 ml-auto d-flex justify-content-center ">
           <img class="hero" src="./static/images/hero.jpg" alt="Hero image">
         </div>
       </div>
       <div class="button-app">
-        <button type="button" class="btn btn-dark btn-lg download-button"> Download</button>
-        <button type="button" class="btn btn-outline-light btn-lg download-button"> Download</button>
+        <button type="button" class="btn btn-dark btn-lg download-button android"> Download</button>
+        <button type="button" class="btn btn-outline-light btn-lg download-button ios"> Download</button>
       </div>
     </div>
 
@@ -68,18 +73,25 @@
   <!-- Sizes Carousel -->
 
 
-  <section id="carusel">
-    <div class="carousel-card">
-      <div class="card-header">
-        <h3>Small</h3>
+    <section id="carusel">
+      <div class="row">
+        <div class="col-lg-12 text-center d-flex justify-content-center">
+      <div class="carousel-card">
+        <div class="card-head">
+          <h3 class="carosel-head">Small</h3>
+        </div>
+        <div class="card-body">
+          <img class = "card-img"src="./static/images/hero.jpg" alt="Small">
+        </div>
+        <div class="card-foot">
+          <h4>Price : <span class= "price">ksh. 500</span></h4>
+        </div>
       </div>
-      <div class="card-body">
-        <img src="./static/images/hero.jpg" alt="Small">
-      </div>
-      <div class="card-footer">
-        <h4>Price : <span>ksh. 500</span></h4>
-      </div>
-    </div>
+  </div>
+  
+</div>
+</section>
+  
     <!-- <div class="carousel-card">
     <div class="card-header">
       <h3>Medium</h3>
@@ -105,7 +117,7 @@
 
   </div> -->
 
-    <div class="border">
+    <div class="border-bm">
 
     </div>
   </section>
@@ -119,11 +131,11 @@
     <div class="crust-head">
       <h5>Choose your crust</h5>
     </div>
-    <div class="row ">
+    <div class="row text-center crust">
       <div class="col-lg-4">
         <div class="crispy">
           <input type="radio" id="crispy">
-            <label for="crispy">Crispy</label>
+            <label class = "" for="crispy">Crispy</label>
           <div class="crispy-image">
             <img class="cris" src="./static/images/crispy.jpg" alt="">
           </div>
@@ -151,7 +163,7 @@
     <div class="topping-head">
       <h5>Choose Your Preffered Toppings</h5>
     </div>
-    <div class="row">
+    <div class="row text-center tops">
       <div class="col-lg-4">
         <div class="Mayonaise">
           <input type="radio" id="mayo" checked>
@@ -166,7 +178,7 @@
           <input type="radio" id="vegetable">
             <label for="vegetable">Vegan</label>
           <div class="vegan">
-            <img class="vegan-image" src="./static/images/cheese.jpg" alt="">
+            <img class="vegan-image" src="./static/images/vegan.jpg" alt="">
           </div>
         </div>
       </div>
@@ -175,23 +187,23 @@
           <input type="radio" id="beef">
             <label for="beef">Cheese & Beef</label>
           <div class="beef-may">
-            <img class="cheese-image" src="./static/images/cheese.jpg" alt="">
+            <img class="cheese-image" src="./static/images/Beef mayo.jpg" alt="">
           </div>
         </div>
       </div>
 
     </div>
 
-    <div class="quanity">
+    <div class="quantity">
       <form action="">
-        <label for="quantity">Quantity</label>
-        <input type="number" id="quanity">
+        <label class ="fm-content" for="quantity">Quantity: </label>
+        <input class = "fm-quantity" type="number" id="quanity">
       </form>
     </div>
     <div class="size-select">
       <form action="">
-        <label for="quantity">Size</label>
-        <select name="" id="select">
+        <label class ="fm-content" for="quantity">Size:</label>
+        <select class ="fm-size" name="" id="select">
           <option value="small">Small</option>
           <option value="medium">Medium</option>
           <option value="Medium">Large</option>
@@ -200,31 +212,36 @@
     </div>
     <div class="delivery">
       <form action="">
-        <label for="quantity">Delivery</label>
-        <input type="text" id="delivery" placeholder="Enter your location">
-        <button class="btn btn-warning btn-lg">Charges</button>
+        <label class ="fm-content" for="quantity">Delivery</label>
+        <input class ="fm-delivery" type="text" id="delivery" placeholder="Enter your location">
+        <button class="btn btn-lg custom">Charges</button>
       </form>
     </div>
     <div class="checkout">
-      <button class = "check">Checkout</button>
+      <button class = "check btn btn-lg">Checkout</button>
     </div>
-
-  </section>
-
-  <!-- Pricing -->
+     <!-- Pricing -->
 
 
   <section id="pricing">
-    <div class="card">
+    <div class="results">
       <!-- fontawesome -->
-      <div class="card-header">
-        <h5 id= "priceHead">Small</h5>
+      <div class="tick">Dreezy</div>
+      <div class = "result-cont">
+        <div class="card-head">
+          <h5 id= "priceHead">Small</h5>
+        </div>
+        <div class="result-price">
+          <h5>Price: <span class= "price"> ksh.500</span></h5>
+        </div>
       </div>
-      <div class="cardfooter">
-        <h5>Price: ksh.500</h5>
-      </div>
+      
     </div>
   </section>
+
+  </section>
+
+ 
 </body>
 
 </html>
