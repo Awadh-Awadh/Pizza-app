@@ -7,6 +7,7 @@ function calculatePrice() {
   let mayonaise =document.getElementById('mayo')
   let vegan = document.getElementById('vegetable')
   let perperoni = document.getElementById('biff')
+  // let radios = document.querySelectorAll('input[name="crust"]');
   let itemList = document.querySelector('#select').value;
   let price = document.querySelector('#price');
   let quantity = document.getElementById('quanity').value;
@@ -18,50 +19,52 @@ function calculatePrice() {
     "glutten": 150
 
   };
-  let toppings = {
-    "mayonaise": 200,
-    "vegan": 150,
-    "perperoni": 300
-  }
-  function checkSmall(){}
-  if(stuffed.checked && vegan.checked && itemList==='small' && quantity>0){
-    var small = (prices[0] + crust.crispy + toppings.mayonaise)*quantity
-    price.innerText = small;
-  }
-  else if(glutten.checked && perperoni.cheched && itemList === 'small' && quantity>0){
-    var small = (prices[0] + crust.glutten + toppings.perperoni)*quantity
-    price.innerText = small;
-  }
-  else{
-    var small = (prices[0] + crust.crispy + toppings.mayonaise)*quantity
-    price.innerText = small;
-  }
- if(stuffed.checked && vegan.checked && itemList==='medium' && quantity>0){
-    let medium = (prices[1] + crust.stuffed + toppings.vegan)*quantity;
-    price.innerText = medium;
-  }
-  else if (glutten.checked && perperoni.cheched && itemList === 'medium' && quantity>0){
-    var small = (prices[1] + crust.glutten + toppings.perperoni)*quantity
-    price.innerText = medium;
-  }
-  // else{
-  //   var small = (prices[1] + crust.crispy + toppings.mayonaise)*quantity
-  //   price.innerText = medium;
-  // }
+  let toppings = 200;
 
+    //  Checks prices for small pizza
+
+
+  if(crispy.checked && (mayonaise.checked || vegan.checked || perperoni.checked) && itemList==='small' && quantity>0){
+    var small = (prices[0] + crust.crispy + toppings)*quantity
+    price.innerText = small;
+  }
+  if(stuffed.checked && (mayonaise.checked || vegan.checked || perperoni.checked) && itemList==='small' && quantity>0){
+    var small = (prices[0] + crust.stuffed + toppings)*quantity
+    price.innerText = small;
+  }
+  if (glutten.checked && (mayonaise.checked || vegan.checked || perperoni.checked) && itemList === 'small'){
+    var small = (prices[0] + crust.glutten + toppings.mayonaise)*quantity
+    price.innerText = small;
+  }
   
-  else if(stuffed.checked && vegan.checked && itemList==='Medium' && quantity>0){
-    let large = (prices[2] + crust.stuffed + toppings.vegan)*quantity;
+  // checks prices for medium sized pizza
+
+ if(crispy.checked && (mayonaise.checked || vegan.checked || perperoni.checked) && itemList==='medium' && quantity>0){
+    let medium = (prices[1] + crust.crispy + toppings)*quantity;
+    price.innerText = medium;
+  }
+  if (stuffed.checked && (mayonaise.checked || vegan.checked || perperoni.checked) && itemList==='medium' && quantity>0){
+    let medium = (prices[1] + crust.stuffed + toppings)*quantity
+    price.innerText = medium;
+  }
+  if (glutten.checked && (mayonaise.checked || vegan.checked || perperoni.checked) && itemList === 'medium'){
+    let small = (prices[1] + crust.glutten + toppings)*quantity
+    price.innerText = medium;
+  }
+  //  checks prices for large pizza
+  
+  if(crispy.checked && (mayonaise.checked || vegan.checked || perperoni.checked) && itemList==='Medium' && quantity>0){
+    let large = (prices[2] + crust.crispy + toppings)*quantity;
     price.innerText = large;
   }
-  else if(glutten.checked && perperoni.cheched && itemList === 'Medium' && quantity>0){
-    var small = (prices[2] + crust.glutten + toppings.perperoni)*quantity
+  if (stuffed.checked && (mayonaise.checked || vegan.checked || perperoni.checked) && itemList==='Medium' && quantity>0){
+    let large = (prices[2] + crust.stuffed + toppings)*quantity
     price.innerText = large;
   }
-  // else {
-  //   var small = (prices[2] + crust.crispy + toppings.mayonaise)*quantity
-  //   price.innerText = large;
-  // }
+  if (glutten.checked && (mayonaise.checked || vegan.checked || perperoni.checked) && itemList === 'Medium'){
+    let large = (prices[2] + crust.glutten + toppings)*quantity
+    price.innerText = large;
+  }
 
 
 
