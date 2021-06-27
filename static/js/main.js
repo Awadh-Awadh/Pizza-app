@@ -82,7 +82,7 @@ function deliveryCharge() {
   let deliveryPrice = 300;
   if(place === ''){
     alert("Please enter your location");
-    break
+    // break
   }
   else{
     alert(`Your Pizza will be delivered to ${place}, and delivery charge is ksh. ${deliveryPrice}`)
