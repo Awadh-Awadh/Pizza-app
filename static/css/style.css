@@ -156,6 +156,7 @@ display: flex;
 justify-content: center;
 display: none;
 transition: all 4s ease;
+
 }
 .results{
   width: 600px;
@@ -167,6 +168,7 @@ transition: all 4s ease;
   justify-content: space-around;
   align-content: center;
   text-align: center;
+  background-image: radial-gradient(white, black);
 }
 .tick{
  margin: auto 0;
