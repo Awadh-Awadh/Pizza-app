@@ -154,11 +154,11 @@ margin-left: 9.5rem;
 text-align: center;
 display: flex;
 justify-content: center;
-opacity: 0;
+display: none;
 transition: all 4s ease;
 }
 .results{
-  width: 400px;
+  width: 600px;
   height: 400px;
   background-color: #FDFEFF;
   border-radius: 20px;
@@ -166,15 +166,25 @@ transition: all 4s ease;
   color: #000;
   justify-content: space-around;
   align-content: center;
+  text-align: center;
 }
 .tick{
  margin: auto 0;
 }
 
 .result-price{
-  padding-top: 15rem;
+  padding-top: 5rem;
 }
 .sucess{
 font-size: 8rem;
 color: #4BB543;
+}
+.re-img{
+height: 150px;
+width: 150px;
+}
+.deliver-text{
+padding: 3rem;
+font-size: 3.5rem;
+text-align: center;
 }
