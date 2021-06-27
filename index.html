@@ -4,7 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  
+  <script src="https://kit.fontawesome.com/d6b9881e04.js" crossorigin="anonymous"></script>
+
 
   <!-- bootstrap cdn -->
 
@@ -42,7 +45,7 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <form class="my-2 my-lg-0 ml-auto">
-            <button class="btn btn-outline-warning my-2 my-sm-0" type="submit">Order Now ! !</button>
+            <a href="#order"><button class="btn btn-outline-warning my-2 my-sm-0" type="button">Order Now ! !</button></a>
           </form>
         </div>
       </nav>
@@ -53,7 +56,7 @@
 
       <div class="row content-main">
         <div class="col-lg-6">
-          <h1>Welcome to <span class = "pizzeria">Pizzeria</span></h1>
+          <h1>Welcome to <span class="pizzeria">Pizzeria</span></h1>
           <h3>Customize your Pizza and order it anytime.</h3>
         </div>
         <div class="col-lg-6 ml-auto d-flex justify-content-center ">
@@ -61,8 +64,8 @@
         </div>
       </div>
       <div class="button-app">
-        <button type="button" class="btn btn-dark btn-lg download-button android"> Download</button>
-        <button type="button" class="btn btn-outline-light btn-lg download-button ios"> Download</button>
+        <button type="button" class="btn btn-dark btn-lg download-button android"><i class="fab fa-apple"></i> Download</button>
+        <button type="button" class="btn btn-outline-light btn-lg download-button ios"><i class="fab fa-google-play"> </i> Download</button>
       </div>
     </div>
 
@@ -73,170 +76,76 @@
   <!-- Sizes Carousel -->
 
 
-    <section id="carusel">
-      <div class="row">
-        <div class="col-lg-12 text-center d-flex justify-content-center">
+  <section id="carusel">
+    <div class="row">
+      <div class="col-lg-12 text-center d-flex justify-content-center">
 
-          <div id="carouselIndicator" class="carousel slide" data-ride= "carousel" data-interval="3000">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <div class="carousel-card">
-                  <div class="card-head">
-                    <h3 class="carosel-head">Small</h3>
-                  </div>
-                  <div class="card-body">
-                    <img class = "card-img"src="./static/images/hero.jpg" alt="Small">
-                  </div>
-                  <div class="card-footer">
-                    <h4>Price : <span class= "price">ksh. 500</span></h4>
-                  </div>
+        <div id="carouselIndicator" class="carousel slide" data-ride="carousel" data-interval="3000">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="carousel-card">
+                <div class="card-head">
+                  <h3 class="carosel-head">Small</h3>
                 </div>
-              </div>
-              <div class="carousel-item">
-                <div class="carousel-card">
-                  <div class="card-head">
-                    <h3 class="carosel-head">Medium</h3>
-                  </div>
-                  <div class="card-body">
-                    <img class = "card-img" src="./static/images/crispy.jpg" alt="Medium">
-                  </div>
-                  <div class="card-footer">
-                    <h4>Price : <span class= "price">ksh. 800</span></h4>
-                  </div>
-              
+                <div class="card-body">
+                  <img class="card-img" src="./static/images/hero.jpg" alt="Small">
                 </div>
-              </div>
-              <div class="carousel-item">
-                <div class="carousel-card">
-                  <div class="card-head">
-                    <h3 class="carosel-head">Large</h3>
-                  </div>
-                  <div class="card-body">
-                    <img class = "card-img" src="./static/images/glutten.jpg" alt="Small">
-                  </div>
-                  <div class="card-footer">
-                    <h4>Price : <span class= "price">ksh. 1200</span></h4>
-                  </div>
-              
+                <div class="card-footer">
+                  <h4>Price : <span class="price">ksh. 500</span></h4>
                 </div>
               </div>
             </div>
-            <a class="carousel-control-prev" href="#carouselIndicator" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next pad-right" href="#carouselIndicator" role="button" data-slide="next">
-              <span class="carousel-control-next-icon " aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
+            <div class="carousel-item">
+              <div class="carousel-card">
+                <div class="card-head">
+                  <h3 class="carosel-head">Medium</h3>
+                </div>
+                <div class="card-body">
+                  <img class="card-img" src="./static/images/crispy.jpg" alt="Medium">
+                </div>
+                <div class="card-footer">
+                  <h4>Price : <span class="price">ksh. 800</span></h4>
+                </div>
+
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-card">
+                <div class="card-head">
+                  <h3 class="carosel-head">Large</h3>
+                </div>
+                <div class="card-body">
+                  <img class="card-img" src="./static/images/glutten.jpg" alt="Small">
+                </div>
+                <div class="card-footer">
+                  <h4>Price : <span class="price">ksh. 1200</span></h4>
+                </div>
+
+              </div>
+            </div>
           </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      
-  </div>
-  
-</div>
-</section>
-  
-   
-    
-
-    <div class="border-bm">
+          <a class="carousel-control-prev" href="#carouselIndicator" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next pad-right" href="#carouselIndicator" role="button" data-slide="next">
+            <span class="carousel-control-next-icon " aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+
+
+      </div>
 
     </div>
+  </section>
+
+
+
+
+  <div class="border-bm">
+
+  </div>
   </section>
 
   <!-- Customize and Order -->
@@ -251,8 +160,8 @@
     <div class="row text-center crust">
       <div class="col-lg-4">
         <div class="crispy">
-          <input type="radio" id="crispy" name = "crust">
-            <label class = "" for="crispy">Crispy</label>
+          <input type="radio" id="crispy" name="crust">
+            <label class="" for="crispy">Crispy</label>
           <div class="crispy-image">
             <img class="cris" src="./static/images/crispy.jpg" alt="">
           </div>
@@ -260,7 +169,7 @@
       </div>
       <div class="col-lg-4">
         <div class="stuffed">
-          <input type="radio" id="stuff" name = "crust">
+          <input type="radio" id="stuff" name="crust">
             <label for="stuff">Stuffed</label>
           <div class="stuffed-image">
             <img class="stuff" src="./static/images/stuffed.jpg" alt="stuffed">
@@ -269,7 +178,7 @@
       </div>
       <div class="col-lg-4">
         <div class="gluten-free">
-          <input type="radio" id="glutten" name = "crust">
+          <input type="radio" id="glutten" name="crust">
             <label for="glutten">Gluten-free</label>
           <div class="glutten-image">
             <img class="glut" src="./static/images/glutten.jpg" alt="">
@@ -283,7 +192,7 @@
     <div class="row text-center tops">
       <div class="col-lg-4">
         <div class="Mayonaise">
-          <input type="radio" id="mayo" name ="tops" checked>
+          <input type="radio" id="mayo" name="tops" checked>
             <label for="mayo">Mayonaise</label>
           <div class="mayo">
             <img class="mayo-image" src="./static/images/cheese.jpg" alt="">
@@ -292,7 +201,7 @@
       </div>
       <div class="col-lg-4">
         <div class="veg">
-          <input type="radio" id="vegetable" name ="tops">
+          <input type="radio" id="vegetable" name="tops">
             <label for="vegetable">Vegan</label>
           <div class="vegan">
             <img class="vegan-image" src="./static/images/vegan.jpg" alt="">
@@ -301,8 +210,8 @@
       </div>
       <div class="col-lg-4">
         <div class="Beef">
-          <input type="radio" id="biff" name ="tops">
-            <label for="beef">Cheese & Beef</label>
+          <input type="radio" id="biff" name="tops">
+            <label for="beef">Perperoni</label>
           <div class="beef-may">
             <img class="cheese-image" src="./static/images/Beef mayo.jpg" alt="">
           </div>
@@ -313,14 +222,15 @@
 
     <div class="quantity">
       <form action="">
-        <label class ="fm-content" for="quantity">Quantity: </label>
-        <input class = "fm-quantity" type="number" id="quanity">
+        <label class="fm-content" for="quantity">Quantity: </label>
+        <input class="fm-quantity" type="number" id="quanity">
       </form>
     </div>
     <div class="size-select">
       <form action="">
-        <label class ="fm-content" for="quantity">Size:</label>
-        <select class ="fm-size" name="" id="select">
+        <label class="fm-content" for="quantity">Size:</label>
+        <select class="fm-size" name="" id="select">
+          <option selected disabled> Choose your size</option>
           <option value="small">Small</option>
           <option value="medium">Medium</option>
           <option value="Medium">Large</option>
@@ -329,36 +239,35 @@
     </div>
     <div class="delivery">
       <form action="">
-        <label class ="fm-content" for="quantity">Delivery</label>
-        <input class ="fm-delivery" type="text" id="delivery" placeholder="Enter your location">
+        <label class="fm-content" for="quantity">Delivery</label>
+        <input class="fm-delivery" type="text" id="delivery" placeholder="Enter your location">
         <button class="btn btn-lg custom">Charges</button>
       </form>
     </div>
     <div class="checkout">
-      <button class = "check btn btn-lg">Checkout</button>
+      <button class="check btn btn-lg">Checkout</button>
     </div>
-     <!-- Pricing -->
+    <!-- Pricing -->
 
 
-  <section id="pricing">
-    <div class="results">
-      <!-- fontawesome -->
-      <div class="tick">Dreezy</div>
-      <div class = "result-cont">
-        <div class="card-head">
-          <h5 id= "priceHead">Small</h5>
+    <section id="pricing">
+      <div class="results">
+        <div class="tick"><i class="fas fa-check-circle sucess"></i></div>
+        <div class="result-cont">
+          <div class="card-head">
+            <h5 id="priceHead">Your custom pizza</h5>
+          </div>
+          <div class="result-price">
+            <h5>Price: Ksh. <span id="price" class="price"></span></h5>
+          </div>
         </div>
-        <div class="result-price">
-          <h5>Price: <span class= "price"> ksh.500</span></h5>
-        </div>
+
       </div>
-      
-    </div>
-  </section>
+    </section>
 
   </section>
 
- <script src="./static/js/main.js"></script>
+  <script src="./static/js/main.js"></script>
 </body>
 
 </html>
