@@ -15,8 +15,8 @@ function calculatePrice() {
   let prices = [500, 800, 1200];
   let crust = {
     "crispy": 200,
-    "stuffed": 250,
-    "glutten": 150
+    "stuffed": 350,
+    "glutten": 300
 
   };
   let toppings = 200;
@@ -25,45 +25,48 @@ function calculatePrice() {
 
 
   if(crispy.checked && (mayonaise.checked || vegan.checked || perperoni.checked) && itemList==='small' && quantity>0){
-    var small = (prices[0] + crust.crispy + toppings)*quantity
+    let small = (prices[0] + crust.crispy + toppings)*quantity
     price.innerText = small;
   }
-  if(stuffed.checked && (mayonaise.checked || vegan.checked || perperoni.checked) && itemList==='small' && quantity>0){
-    var small = (prices[0] + crust.stuffed + toppings)*quantity
+  else if(stuffed.checked && (mayonaise.checked || vegan.checked || perperoni.checked) && itemList==='small' && quantity>0){
+    let small = (prices[0] + crust.stuffed + toppings)*quantity
     price.innerText = small;
   }
-  if (glutten.checked && (mayonaise.checked || vegan.checked || perperoni.checked) && itemList === 'small'){
-    var small = (prices[0] + crust.glutten + toppings.mayonaise)*quantity
+  else if (glutten.checked && (mayonaise.checked || vegan.checked || perperoni.checked) && itemList === 'small'){
+    let small = (prices[0] + crust.glutten + toppings)*quantity
     price.innerText = small;
   }
   
   // checks prices for medium sized pizza
 
- if(crispy.checked && (mayonaise.checked || vegan.checked || perperoni.checked) && itemList==='medium' && quantity>0){
+ else if(crispy.checked && (mayonaise.checked || vegan.checked || perperoni.checked) && itemList==='medium' && quantity>0){
     let medium = (prices[1] + crust.crispy + toppings)*quantity;
     price.innerText = medium;
   }
-  if (stuffed.checked && (mayonaise.checked || vegan.checked || perperoni.checked) && itemList==='medium' && quantity>0){
+ else if (stuffed.checked && (mayonaise.checked || vegan.checked || perperoni.checked) && itemList==='medium' && quantity>0){
     let medium = (prices[1] + crust.stuffed + toppings)*quantity
     price.innerText = medium;
   }
-  if (glutten.checked && (mayonaise.checked || vegan.checked || perperoni.checked) && itemList === 'medium'){
-    let small = (prices[1] + crust.glutten + toppings)*quantity
+ else if (glutten.checked && (mayonaise.checked || vegan.checked || perperoni.checked) && itemList === 'medium'){
+    let medium = (prices[1] + crust.glutten + toppings)*quantity
     price.innerText = medium;
   }
   //  checks prices for large pizza
   
-  if(crispy.checked && (mayonaise.checked || vegan.checked || perperoni.checked) && itemList==='Medium' && quantity>0){
+ else if(crispy.checked && (mayonaise.checked || vegan.checked || perperoni.checked) && itemList==='Medium' && quantity>0){
     let large = (prices[2] + crust.crispy + toppings)*quantity;
     price.innerText = large;
   }
-  if (stuffed.checked && (mayonaise.checked || vegan.checked || perperoni.checked) && itemList==='Medium' && quantity>0){
+ else if (stuffed.checked && (mayonaise.checked || vegan.checked || perperoni.checked) && itemList==='Medium' && quantity>0){
     let large = (prices[2] + crust.stuffed + toppings)*quantity
     price.innerText = large;
   }
-  if (glutten.checked && (mayonaise.checked || vegan.checked || perperoni.checked) && itemList === 'Medium'){
-    let large = (prices[2] + crust.glutten + toppings)*quantity
-    price.innerText = large;
+ else if (glutten.checked && (mayonaise.checked || vegan.checked || perperoni.checked) && itemList === 'Medium'){
+  let large = (prices[2] + crust.glutten + toppings)*quantity
+  price.innerText = large;
+  }
+  else {
+    alert('Please make sure you fill up all field')
   }
 
 
@@ -77,7 +80,15 @@ function calculatePrice() {
 function deliveryCharge() {
   let place = document.getElementById('delivery').value;
   let deliveryPrice = 300;
-  alert(`Your Pizza will be delivered to ${place}, and delivery charge is ksh. ${deliveryPrice}`)
+  if(place === ''){
+    alert("Please enter your location");
+    break
+  }
+  else{
+    alert(`Your Pizza will be delivered to ${place}, and delivery charge is ksh. ${deliveryPrice}`)
+  }
+  
+  
 }
 let del = document.querySelector('.custom');
 del.addEventListener('click', (e) => {
@@ -90,6 +101,6 @@ del.addEventListener('click', (e) => {
 let checkout = document.querySelector('.check');
 checkout.addEventListener('click', () => {
   let pricing = document.getElementById('pricing');
-  pricing.style.opacity = 1;
+  pricing.style.display = "flex";
   calculatePrice()
 })
